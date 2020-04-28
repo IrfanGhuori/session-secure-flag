@@ -1,0 +1,21 @@
+{
+    "name": "src/active_sessions",
+    "description": "Websites which have sensitive information need to be patched to ensure its not exploited because of session issues. In earlier versions of apache cookie reliability was not assumed and hence the default method was always using url-rewrite which meant every url link, every form submission etc would have a PHPSESSID=<sessionid> passed along to inform the server about the active session. New versions have turned this off using",
+    "autoload": {
+        "psr-4": {
+            "app\\" : "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Muhammad Irfan",
+            "email": "m.irfan_ahmed@hotmail.com",
+            "homepage": "https://github.com/IrfanGhuori",
+            "role": "Full-Stack Developer"
+        }
+    ],
+    "require" : {
+        "php" : "^5.5 || ^7.0",
+        "ext-mbstring": "*"
+    }
+}
